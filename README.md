@@ -2,6 +2,9 @@
 
 A modern, feature-rich chat UI component for React & Supabase with a professional design and comprehensive features.
 
+Demo: [Click here](https://bright-crepe-3c6582.netlify.app/)
+
+
 ## Features
 
 - 💬 Real-time messaging with smooth animations

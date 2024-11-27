@@ -1,0 +1,102 @@
+/* Message animations */
+@keyframes messageInRight {
+  0% {
+    opacity: 0;
+    transform: translate(20px, 10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes messageInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, 10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Avatar animations */
+@keyframes avatarPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(5px);
+  }
+  50% {
+    transform: scale(1.1) translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Timestamp animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Reply animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Reaction animation */
+@keyframes reactionPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply animations */
+.message-animation[data-current-user="true"] {
+  animation: messageInRight 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.message-animation[data-current-user="false"] {
+  animation: messageInLeft 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.avatar-animation {
+  animation: avatarPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.timestamp-animation {
+  animation: fadeIn 0.3s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+.reply-animation {
+  animation: slideIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.reaction-animation {
+  animation: reactionPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}

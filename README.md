@@ -322,3 +322,5 @@ interface Attachment {
 ## License
 
 MIT License - feel free to use this component in your projects.
+
+Made by the [Datao](https://datao.ma/) team
